@@ -1,0 +1,50 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefWidth="540" prefHeight="415" stylesheets="@./css/login.css" xmlns="http://javafx.com/javafx/8.0.121"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!-- 操作栏；最小化、关闭 -->
+        <Pane id="operation" prefWidth="540" prefHeight="158">
+            <children>
+                <Label id="login_logo" styleClass="logo" layoutX="10" layoutY="5" prefWidth="200" prefHeight="15" text="防微信PC" style="-fx-text-fill:#666666;"/>
+                <Button id="login_min" styleClass="min" layoutX="454" prefWidth="43" prefHeight="32"/>
+                <Button id="login_close" styleClass="close" layoutX="497" prefWidth="43" prefHeight="32"/>
+            </children>
+        </Pane>
+
+        <Label  id="accountText" layoutX="100" layoutY="210" text="账号：">
+            <font>
+                <Font size="16"></Font>
+            </font>
+        </Label>
+
+        <TextField id="userId" layoutX="150" layoutY="205" prefWidth="300" prefHeight="30" promptText="请输入账号">
+            <padding>
+                <Insets left="10"/>
+            </padding>
+        </TextField>
+
+        <Label  id="accountText" layoutX="100" layoutY="260" text="密码：">
+            <font>
+                <Font size="16"></Font>
+            </font>
+        </Label>
+        <PasswordField id="userPassword" layoutX="150" layoutY="260" prefWidth="300" prefHeight="30" promptText="请输入密码">
+            <padding>
+                <Insets left="10"/>
+            </padding>
+        </PasswordField>
+
+        <Button id="login_button" styleClass="login_button" layoutX="170" layoutY="320" prefWidth="250" prefHeight="35" text="登 陆"/>
+
+        <Label id="slogan" layoutX="5" layoutY="398" prefWidth="400" prefHeight="15"
+               text="城南花已开，原君永常在">
+            <font>
+                <Font size="12"/>
+            </font>
+        </Label>
+    </children>
+</Pane>
